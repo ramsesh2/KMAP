@@ -5,11 +5,11 @@ public class Group {
 	Set grouping;
 	
 	public Group() {
-		grouping = new HashSet();
+		grouping = new HashSet<Integer>();
 	}
 	
 	public Group(int term) {
-		grouping = new HashSet();
+		grouping = new HashSet<>();
 		grouping.add(term);
 	}
 	

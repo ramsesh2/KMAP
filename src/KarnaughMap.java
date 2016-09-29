@@ -2,10 +2,12 @@ import java.util.*;
 
 public class KarnaughMap {
 	Map<Integer, Boolean> map;	//map storing term and corresponding truth value
+	int size;
 	
-	KarnaughMap(int size){	//initializes a map with all values false
+	KarnaughMap(int s){	//initializes a map with all values false
+		size = s;
 		map = new HashMap<Integer, Boolean>();
-		for(int i = 0; i < size; i++){
+		for(int i = 0; i < s; i++){
 			map.put(i, false);
 		}
 	}
